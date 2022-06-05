@@ -1,0 +1,65 @@
+.SectionInfoContainer {
+  width: 100%;
+  height: 1074px;
+}
+
+.SectionInfoTop {
+  /* height: 50%; */
+  /* width: 50%; */
+  /* height: 50%; */
+  display: flex;
+}
+
+.SectionInfoTopLeft {
+  /* width: 50%; */
+  flex: 0.508;
+
+  height: 537px;
+  /* height: 100%; */
+}
+
+/*------------------- TopRight ------------------*/
+.SectionInfoTopRight {
+  /* width: 50%; */
+  display: flex;
+  flex: 0.5;
+  max-width: 960px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4b4b4b;
+}
+
+.BrandContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: fit-content;
+  gap: 50px;
+  /* margin: auto; */
+  /* top: 50%; */
+}
+
+.SectionInfoBottom {
+  height: 50%;
+  display: flex;
+}
+
+.SectionInfoBottomLeft {
+  flex: 0.5;
+  /* width: 50%; */
+  /* height: 537px; */
+  /* height: 100%; */
+}
+
+.SectionInfoBottomRight {
+  /* width: 50%; */
+
+  flex: 0.5;
+}
+
+.InfoCard {
+  /* margin: 0 auto; */
+  word-break: break-all;
+  white-space: pre-wrap;
+}
