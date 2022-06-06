@@ -112,10 +112,12 @@ export const SubscriptionButton = styled.button`
 `;
 
 export const SocialIconWrapper = styled.div`
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20%;
+  width: 30%;
+  gap: 10px;
 `;
 
 export const SocialIcon = styled.div``;
