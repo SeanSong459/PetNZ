@@ -1,0 +1,10 @@
+.HeroContainer {
+    width: 100%;
+    background-image: url('../../Assets/images/HeroImg.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 70vh;
+
+
+}
