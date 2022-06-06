@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import Hero from "../Components/Hero/Hero";
 import Slide from "../Components/Slide/Slide";
+import SectionInfo from "../Components/SectionInfo/SectionInfo";
+import FoodSlider from "../Components/FoodSlider/FoodSlider";
+// import SliderSection from "../Components/FoodSlider/SliderSection";
 
 const Home = () => {
   return (
@@ -10,6 +13,9 @@ const Home = () => {
         <Navbar />
         <Hero />
         <Slide />
+        <SectionInfo />
+        <FoodSlider />
+        {/* <SliderSection /> */}
       </div>
     </>
   );
