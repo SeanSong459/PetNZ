@@ -3,6 +3,10 @@ import { Icon } from "@iconify/react";
 import { useRef, useState } from "react";
 import "./FoodSlider.css";
 import stepper1 from "../../Assets/images/Stepper1.png";
+import stepper2 from "../../Assets/images/Stepper2.png";
+import PetData from "./PetData";
+import { PetCatds } from "./PetCatds";
+import PetFoodData from "./PetFoodData";
 
 const FoodSlider = () => {
   const [isMoved, setIsMoved] = useState(false);
@@ -49,17 +53,67 @@ const FoodSlider = () => {
           <div className="FoodSlider1">
             <div className="SlideInner1">
               <div className="Stepper1Container">
-                <img src={stepper1} alt="" />
+                <div className="StepperWrapper">
+                  <img className="Stepper1" src={stepper1} alt="" />
+                </div>
                 <div className="FoodFinderTitle">
                   What type of pet do you have?
                 </div>
                 <div className="FoodFinderSubtitle">Select one:</div>
+                <div className="PetContainer">
+                  {PetData.map((item) => {
+                    if (item.id < 4) {
+                      return (
+                        <PetCatds
+                          key={item.id}
+                          img={item.img}
+                          name={item.name}
+                        />
+                      );
+                    }
+                  })}
+                </div>
+                <div className="PetContainer">
+                  {PetData.map((item) => {
+                    if (item.id > 3 && item.id < 9) {
+                      return (
+                        <PetCatds
+                          key={item.id}
+                          img={item.img}
+                          name={item.name}
+                        />
+                      );
+                    }
+                  })}
+                </div>
               </div>
             </div>
           </div>
+
+          {/*-------------------- FoodSlider2 -----------------*/}
           <div className="FoodSlider2">
-            <div className="SlideInner2">22222</div>
+            <div className="SlideInner2">
+              <div className="Stepper2Container">
+                <div className="StepperWrapper">
+                  <img className="Stepper1" src={stepper2} alt="" />
+                </div>
+                <div className="FoodFinderTitle">
+                  What kind of dog food are you looking for?
+                </div>
+                <div className="FoodFinderSubtitle">Select one or more:</div>
+                <div className="PetFoodContainer">
+                  {PetFoodData.map((item) => {
+                    return (
+                      <PetCatds key={item.id} img={item.img} name={item.name} />
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
           </div>
+
+          {/*-------------------- FoodSlider3 -----------------*/}
+
           <div className="FoodSlider3">
             <div className="SlideInner3">3333333</div>
           </div>

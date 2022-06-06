@@ -50,7 +50,7 @@
 
 .FoodSlideArrow.right {
   right: 0;
-  margin-right: 200px;
+  margin-right: 250px;
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@
 
 .FoodSlideContainer {
   display: flex;
-  margin-left: 50px;
+  margin-left: 53px;
   width: max-content;
   overflow: hidden;
   transform: translateX(0px);
@@ -87,7 +87,7 @@
   justify-content: center; */
   width: 1000px;
   height: 90%;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
 }
 
@@ -95,6 +95,12 @@
   /* margin-top: 10px; */
   margin: 0 auto;
   /* display: flex; */
+}
+
+.StepperWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .FoodFinderTitle {
@@ -123,13 +129,25 @@
 
   color: #000000;
 }
+
+.PetContainer {
+  margin-top: 50px;
+  display: flex;
+  max-width: 960px;
+  flex-flow: wrap;
+  /* background-color: aqua; */
+  justify-content: center;
+  gap: 70px;
+}
+/*---------------- Slide2  ----------------*/
+
 .SlideInner2 {
   /* display: flex;
   align-items: center;
   justify-content: center; */
   width: 800px;
-  height: 80%;
-  background-color: aqua;
+  height: 90%;
+  /* background-color: aqua; */
 }
 .FoodSlider2 {
   width: 1760px;
@@ -138,6 +156,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.PetFoodContainer {
+  margin-top: 50px;
+  display: flex;
+  max-width: 1080px;
+  flex-flow: wrap;
+  /* background-color: aqua; */
+  justify-content: center;
+  gap: 40px;
 }
 
 .SlideInner3 {

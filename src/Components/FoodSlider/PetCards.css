@@ -1,0 +1,36 @@
+.PetCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.PetImgContainer {
+  width: 164px;
+  height: 164px;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.PetImg {
+  /* background: #ff7a59; */
+  /* width: 30%;
+  height: 30%;
+  border-radius: 50%; */
+  display: flex;
+}
+
+.PetImgContainer:hover {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #bf2121;
+  background-color: #e7e7e7;
+}
+
+/* .PetImg:focus {
+  outline: 1px dashed red;
+} */
