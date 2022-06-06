@@ -1,0 +1,103 @@
+.dashboard-title-wrapper {
+  margin-top: 50px;
+  height: 26vh;
+}
+
+.dashboard-title {
+  /* width: 469px; */
+  /* height: 81px; */
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 81px;
+  text-align: center;
+  /* identical to box height */
+
+  /* display: flex;
+  align-items: center; */
+
+  color: #bf2121;
+}
+
+.dashboard-subtitle {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #000000;
+}
+
+.dashboard-reminder {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ec1c24;
+  text-align: center;
+}
+
+.dashboard-history-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-history-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard-history-title {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 81px;
+  /* identical to box height */
+
+  /* display: flex;
+  align-items: center; */
+
+  color: #000000;
+}
+
+.dashboard-history-subtitle {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #000000;
+}
+
+.dashboard-history-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 36px;
+
+  width: 164px;
+  height: 45px;
+
+  /* Grey 500 */
+
+  background: #666666;
+  border-radius: 64px;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

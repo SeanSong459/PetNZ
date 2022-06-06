@@ -14,6 +14,7 @@ import {
   SubscriptionWrapper,
 } from "./FooterStyle";
 import { Icon } from "@iconify/react";
+import ins from "../../Assets/images/ins.png";
 
 const Footer = () => {
   return (
@@ -64,12 +65,13 @@ const Footer = () => {
               />
             </SocialIcon>
             <SocialIcon>
-              <Icon
+              {/* <Icon
                 icon="entypo-social:instagram-with-circle"
                 width="50"
                 height="50"
                 color="radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)"
-              />
+              /> */}
+              <img src={ins} style={{ width: "50px" }} />
             </SocialIcon>
             <SocialIcon>
               <Icon

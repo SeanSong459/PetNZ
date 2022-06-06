@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../../Assets/fonts/Circe/CRC55.otf");
+}
+
+.AccordionContainer {
+  margin-top: 20px;
+  overflow: inherit;
+}
+
+.accordion-itemwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-itemleft {
+  margin-left: 20px;
+  flex: 0.5;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 120px;
+}
+
+.accordion-itemright {
+  margin-right: 20px;
+  flex: 0.2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.accordion-itemtext {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  /* display: flex; */
+  /* align-items: center; */
+  color: #000000;
+  text-align: left;
+}
+
+/* .accordion-itemtext.accordion-title-short {
+  margin-right: 100px;
+} */
+.accordion-itemtext.accordion-title-long {
+  margin-left: -7px;
+}
+
+.accordion-product-container {
+  /* height: 90px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .accordion-product {
+  height: 50px;
+} */
+
+.accordion-product-wrapper {
+  margin-top: -20px;
+  margin-left: -60px;
+}
+
+.accordion-product-price {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: right;
+  margin-right: 30px;
+  color: #000000;
+}
