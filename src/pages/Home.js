@@ -1,12 +1,16 @@
 import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import Hero from "../Components/Hero/Hero";
+import Slide from "../Components/Slide/Slide";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <div className="home" style={{ overflow: "hidden" }}>
+        <Navbar />
+        <Hero />
+        <Slide />
+      </div>
     </>
   );
 };
