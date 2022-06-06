@@ -93,7 +93,7 @@ const Navbar = () => {
           </div>
           <div className="NavbarRight">
             <div className="NavInfoWrapper">
-              <NavLink to="/" className="NavInfoText">
+              <NavLink to="/signin" className="NavInfoText">
                 LOG IN{" "}
               </NavLink>
               <span className="bar">|</span>
@@ -107,6 +107,8 @@ const Navbar = () => {
                   <Icon
                     className="shopping-cart-icon"
                     icon="ic:outline-shopping-cart"
+                    width="30px"
+                    height="30px"
                   />
                   $28.45
                 </div>

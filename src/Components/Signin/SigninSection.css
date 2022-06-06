@@ -1,0 +1,178 @@
+.signin-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: 160px;
+  margin-top: 50px;
+}
+
+.signin-section-left {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.signin-title {
+  /* width: 161px;
+  height: 81px; */
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 81px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.signin-form-label {
+  /* width: 573px; */
+  margin-top: 20px;
+  height: 35px;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  display: block;
+}
+
+.signin-form {
+  width: 400px;
+  height: 31px;
+  padding-left: 8px;
+}
+
+.signin-button {
+  padding: 8px 46px;
+  margin-top: 40px;
+  width: 200px;
+  height: 61px;
+  left: 80px;
+  top: 707px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #ec1c24;
+  /* background-color: #ec1c24; */
+  border-radius: 64px;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.signin-button:hover {
+  background: #bf2121;
+}
+
+.signin-forget-text {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  color: #ec1c24;
+  margin-top: 20px;
+}
+
+/* ----------------signin-section-middle ----------------*/
+.signin-section-middle {
+  flex: 0.2;
+}
+
+.signin-middle-text {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+/* ----------------signin-section-right ----------------*/
+.signin-section-right {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -20px;
+}
+
+.signup-title {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 81px;
+  /* identical to box height */
+
+  display: flex;
+  /* align-items: center; */
+
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.signup-subtitle {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.signup-benefit-text {
+  margin-top: -1px;
+  margin-bottom: -1px;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  /* display: flex; */
+  /* align-items: center; */
+
+  color: #000000;
+}
+
+.signup-button {
+  padding: 8px 46px;
+  margin-top: 30px;
+  width: 200px;
+  height: 61px;
+  left: 80px;
+  top: 707px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #ec1c24;
+  /* background-color: #ec1c24; */
+  border-radius: 64px;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background: #bf2121;
+}
