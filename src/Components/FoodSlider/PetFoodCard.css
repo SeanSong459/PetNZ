@@ -1,0 +1,32 @@
+.PetFoodCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.PetFoodImgContainer {
+  width: 164px;
+  height: 164px;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.PetFoodImg {
+  /* background: #ff7a59; */
+  /* width: 30%;
+    height: 30%;
+    border-radius: 50%; */
+  display: flex;
+}
+
+.PetFoodImgContainer:hover {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #bf2121;
+  background-color: #e7e7e7;
+}

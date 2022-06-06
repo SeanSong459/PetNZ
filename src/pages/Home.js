@@ -4,6 +4,7 @@ import Hero from "../Components/Hero/Hero";
 import Slide from "../Components/Slide/Slide";
 import SectionInfo from "../Components/SectionInfo/SectionInfo";
 import FoodSlider from "../Components/FoodSlider/FoodSlider";
+import Footer from "../Components/Footer/Footer";
 // import SliderSection from "../Components/FoodSlider/SliderSection";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <SectionInfo />
         <FoodSlider />
         {/* <SliderSection /> */}
+        <Footer />
       </div>
     </>
   );
