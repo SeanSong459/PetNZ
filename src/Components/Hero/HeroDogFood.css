@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../../Assets/fonts/Circe/CRC55.otf");
+}
+
+.HeroDogFoodContainer {
+  width: 100%;
+  background-image: url("../../Assets/images/HeroDogFood.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 70vh;
+}

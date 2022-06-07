@@ -13,7 +13,10 @@ const Home = () => {
       <div className="home" style={{ overflow: "hidden" }}>
         <Navbar />
         <Hero />
-        <Slide />
+        <Slide
+          title="Current specials"
+          subtitle="Sale ends on July 1 - don't miss out!"
+        />
         <SectionInfo />
         <FoodSlider />
         {/* <SliderSection /> */}

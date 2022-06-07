@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../../Assets/fonts/Circe/CRC55.otf");
+}
+
+.HeroDogContainer {
+  width: 100%;
+  background-image: url("../../Assets/images/HeroDogImg.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+.dogpage-title-wrapper {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.dogpage-title {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 81px;
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+
+  color: #bf2121;
+}

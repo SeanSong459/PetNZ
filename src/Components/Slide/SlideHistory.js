@@ -1,11 +1,11 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import "./Slide.css";
+import "./SlideHistory.css";
 import SlideItem from "./SlideItem";
 import { useRef, useState } from "react";
 import Items from "./Items";
 
-const Slide = ({ title, subtitle }) => {
+const SlideHistory = ({ title, subtitle }) => {
   // const [isMoved, setIsMoved] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
 
@@ -26,9 +26,12 @@ const Slide = ({ title, subtitle }) => {
   };
 
   return (
-    <>
-      <div className="SlideTxtContainer">
-        <div className="SlideTitle">{title}</div>
+    <div
+      className="Slider-history-container"
+      style={{ backgroundColor: "#f4673459" }}
+    >
+      <div className="SlideTxtContainer-history">
+        <div className="SlideTitle-history">{title}</div>
         <div className="SlideSubtitle">{subtitle}</div>
       </div>
 
@@ -41,7 +44,7 @@ const Slide = ({ title, subtitle }) => {
           onClick={() => handleClick("left")}
           // style={{ display: !isMoved && "none" }}
         />
-        <div className="SlideContainer" ref={listRef}>
+        <div className="SlideContainer-history" ref={listRef}>
           {Items.map((item) => {
             return (
               <SlideItem
@@ -75,8 +78,8 @@ const Slide = ({ title, subtitle }) => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Slide;
+export default SlideHistory;

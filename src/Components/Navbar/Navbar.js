@@ -18,9 +18,9 @@ const Navbar = () => {
       <div className="NavbarContainer">
         <div className="NavbarWrapper">
           <div className="NavbarLeft">
-            <div className="Logo">
+            <Link className="Logo" to="/">
               <img src={Logo} alt="petNZ logo" style={{ width: 180 }}></img>
-            </div>
+            </Link>
             <div className="LogoText">SPOIL YOUR PET!</div>
           </div>
           <div className="NavbarCenter">
@@ -30,7 +30,7 @@ const Navbar = () => {
                 // className={({ isActive }) =>
                 //   isActive ? "NavLink Red" : "NavLink"
                 // }
-                to="/#"
+                to="/dog"
                 onClick={(e) => setIsActive(!isActive)}
                 // style={({ isActive }) =>
                 //   isActive
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <div className="DropdownContainer">
                   {isActive && (
                     <div className="dropdown-menu">
-                      <NavLink className="DropdownLink" to="/">
+                      <NavLink className="DropdownLink" to="/dogfood">
                         Food
                       </NavLink>
                       <NavLink className="DropdownLink" to="/">
@@ -110,7 +110,7 @@ const Navbar = () => {
                     width="30px"
                     height="30px"
                   />
-                  $28.45
+                  {/* $28.45 */}
                 </div>
               </NavLink>
               {/* <span className="NavInfoText">LOG IN</span>

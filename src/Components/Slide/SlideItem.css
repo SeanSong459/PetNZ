@@ -1,78 +1,74 @@
-@font-face{
-    font-family: 'Circe';
-    src:url('../../Assets/fonts/Circe/CRC55.otf')
+@font-face {
+  font-family: "Circe";
+  src: url("../../Assets/fonts/Circe/CRC55.otf");
 }
 
 .slideItemContainer {
-
-    width: 520px;
-    height:300px;
-    /* background-color: #16308e; */
-    margin-right: 10px;
-    margin-left: 40px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+  width: 520px;
+  height: 260px;
+  background-color: white;
+  margin-right: 10px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.ItemImg{
-    flex: 0.5;
-    width: 200px;
-
+.ItemImg {
+  flex: 0.5;
+  width: 160px;
+  /* height: 50px; */
 }
 /* ---------------------ItemInfoWrapper  ---------------------*/
-.ItemInfoWrapper { 
-    flex: 0.5;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
+.ItemInfoWrapper {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 
 .ProductName {
-    font-family: 'Circe';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 29px;
-width: 261px;
-height: 58px;
-color: #EC1C24;
-/* margin-bottom: 20px; */
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  width: 261px;
+  height: 58px;
+  color: #ec1c24;
+  /* margin-bottom: 20px; */
 }
 
-.ProductPrice{
-    margin-top: 40px;
-    font-family: 'Circe';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 27px;
-color: black;
-
+.ProductPrice {
+  margin-top: 40px;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: black;
 }
 .ProductOldprice {
-
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    color: #666666;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #666666;
 }
 
 .ShoppingCartButton {
-    margin-top: 30px;
-    background: #666666;
-border-radius: 64px;
-padding: 8px 20px;
+  margin-top: 30px;
+  background: #666666;
+  border-radius: 64px;
+  padding: 8px 20px;
 
-width: 85px;
-height: 45px;
-border: none;
-
+  width: 85px;
+  height: 45px;
+  border: none;
 }
 .ShoppingCartButton:hover {
-    background: black;
-    cursor: pointer;
-
+  background: black;
+  cursor: pointer;
 }
