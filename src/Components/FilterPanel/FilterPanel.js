@@ -6,8 +6,36 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "./FilterPanel.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
 
-const FilterPanel = () => {
+const FilterPanel = ({ setProducts }) => {
+  const getProducts = async () => {
+    try {
+      const res = await axios.get("http://localhost:5000/api/products");
+      console.log(res.data);
+      setProducts(res.data);
+      const filteredProducts = res.data.filter((product) => {
+        if (LifeStage && Brand) {
+          return product.brand === Brand && product.lifestage === LifeStage;
+        } else {
+          return product.brand === Brand || product.lifestage === LifeStage;
+        }
+      });
+
+      if (!LifeStage && !Breed && !Foodtype && !Brand && !Price)
+        setProducts(res.data);
+      else {
+        setProducts(filteredProducts);
+      }
+      // setProducts(filteredProducts);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  //create filter that updates the products array
+
   const [LifeStage, setLifeStage] = React.useState("");
   const [Breed, setBreed] = React.useState("");
   const [Brand, setBrand] = React.useState("");
@@ -54,8 +82,8 @@ const FilterPanel = () => {
                 onChange={handleLifeStageChange}
               >
                 <MenuItem value={"Puppy"}>Puppy</MenuItem>
-                <MenuItem value={"Juvenile"}>Juvenile</MenuItem>
-                <MenuItem value={"Adulthood"}>Adulthood</MenuItem>
+                <MenuItem value={"Adult"}>Adult</MenuItem>
+                <MenuItem value={"Senior"}>Senior</MenuItem>
               </Select>
             </FormControl>
           </Box>
@@ -72,9 +100,9 @@ const FilterPanel = () => {
                 label="Breed"
                 onChange={handleBreedChange}
               >
-                <MenuItem value={"Labrador"}>Labrador</MenuItem>
-                <MenuItem value={"Bulldog"}>Bulldog</MenuItem>
-                <MenuItem value={"Golden Retriever"}>Golden Retriever</MenuItem>
+                <MenuItem value={"Small"}>Small</MenuItem>
+                <MenuItem value={"Medium"}>Medium</MenuItem>
+                <MenuItem value={"Large"}>Large</MenuItem>
               </Select>
             </FormControl>
           </Box>
@@ -95,6 +123,8 @@ const FilterPanel = () => {
                 <MenuItem value={"Eukanuba"}>Eukanuba</MenuItem>
                 <MenuItem value={"BlackHawk"}>BlackHawk</MenuItem>
                 <MenuItem value={"Royal Canin"}>Royal Canin</MenuItem>
+                <MenuItem value={"Pro Plan"}>Pro Plan</MenuItem>
+                <MenuItem value={"Orijen"}>Orijen</MenuItem>
               </Select>
             </FormControl>
           </Box>
@@ -140,7 +170,11 @@ const FilterPanel = () => {
           </Box>
         </div>
 
-        <Link to="/search" className="search-button-wrapper">
+        <Link
+          to="/search"
+          className="search-button-wrapper"
+          onClick={getProducts}
+        >
           <div className="search-button">SEARCH</div>
         </Link>
         <div className="clear-filter-text" onClick={handleClear}>

@@ -94,11 +94,11 @@ const Navbar = () => {
           <div className="NavbarRight">
             <div className="NavInfoWrapper">
               <NavLink to="/signin" className="NavInfoText">
-                LOG IN{" "}
+                LOG IN
               </NavLink>
               <span className="bar">|</span>
               <NavLink to="/" className="NavInfoText">
-                SIGN UP{" "}
+                SIGN UP
               </NavLink>
               <span className="bar">|</span>
               <NavLink to="/" className="NavInfoText">

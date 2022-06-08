@@ -3,10 +3,21 @@ import SearchCards from "./SearchCards";
 import SearchItems from "./SearchItems";
 import "./SearchResult.css";
 
-const SearchResult = () => {
+const SearchResult = ({ products }) => {
   return (
     <div className="searchresultcontainer">
-      {SearchItems.map((item) => {
+      {products.map((item) => {
+        return (
+          <SearchCards
+            key={item.id}
+            img={item.img}
+            title={item.title}
+            price={item.price}
+            oldprice={item.oldprice}
+          />
+        );
+      })}
+      {/* {SearchItems.map((item) => {
         return (
           <SearchCards
             key={item.id}
@@ -17,7 +28,7 @@ const SearchResult = () => {
           />
         );
       })}
-      ;
+      ; */}
     </div>
   );
 };

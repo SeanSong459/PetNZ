@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import "./SearchCards.css";
 
-const SearchCards = ({ img, name, price, oldprice }) => {
+const SearchCards = ({ img, title, price, oldprice }) => {
   return (
     <div>
       <div className="SearchItemContainer">
@@ -10,10 +10,10 @@ const SearchCards = ({ img, name, price, oldprice }) => {
           <img src={img} alt="#"></img>
         </div>
         {/* <div className="SearchItemInfoWrapper"> */}
-        <div className="SearchProductName">{name}</div>
+        <div className="SearchProductName">{title}</div>
         <div className="SearchProductPrice">
-          {price}
-          <span className="SearchProductOldprice">(was {oldprice})</span>
+          ${price}
+          <span className="SearchProductOldprice">(was ${oldprice})</span>
         </div>
         <button className="SearchShoppingCartButton">
           <Icon
