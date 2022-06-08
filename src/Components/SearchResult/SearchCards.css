@@ -1,36 +1,35 @@
-@font-face {
-  font-family: "Circe";
-  src: url("../../Assets/fonts/Circe/CRC55.otf");
-}
-
-.slideItemContainer {
-  width: 520px;
-  height: 260px;
-  background-color: white;
+.SearchItemContainer {
+  /* width: 520px; */
+  /* height: 260px; */
+  /* background-color: white; */
+  flex-direction: column;
   margin-right: 10px;
   margin-left: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 30px;
   margin-bottom: 50px;
   padding-top: 20px;
   padding-right: 20px;
 }
 
-.ItemImg {
-  flex: 0.5;
-  width: 160px;
+.SearchItemImg img {
+  width: 50%;
+  margin-bottom: 20px;
+  /* flex: 0.5; */
+  /* width: 160px; */
   /* height: 50px; */
 }
+
 /* ---------------------ItemInfoWrapper  ---------------------*/
-.ItemInfoWrapper {
-  flex: 0.5;
-  display: flex;
-  flex-direction: column;
+.SearchItemInfoWrapper {
+  /* flex: 0.5; */
+  /* display: flex;
+  flex-direction: column; */
   /* justify-content: space-between; */
 }
 
-.ProductName {
+.SearchProductName {
   font-family: "Circe";
   font-style: normal;
   font-weight: 700;
@@ -42,7 +41,7 @@
   /* margin-bottom: 20px; */
 }
 
-.ProductPrice {
+.SearchProductPrice {
   margin-top: 40px;
   font-family: "Circe";
   font-style: normal;
@@ -51,7 +50,7 @@
   line-height: 27px;
   color: black;
 }
-.ProductOldprice {
+.SearchProductOldprice {
   font-family: "Circe";
   font-style: normal;
   font-weight: 400;
@@ -60,7 +59,7 @@
   color: #666666;
 }
 
-.ShoppingCartButton {
+.SearchShoppingCartButton {
   margin-top: 30px;
   background: #666666;
   border-radius: 64px;
@@ -70,7 +69,7 @@
   height: 45px;
   border: none;
 }
-.ShoppingCartButton:hover {
+.SearchShoppingCartButton:hover {
   background: black;
   cursor: pointer;
 }

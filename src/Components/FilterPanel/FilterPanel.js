@@ -5,6 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "./FilterPanel.css";
+import { Link } from "react-router-dom";
 
 const FilterPanel = () => {
   const [LifeStage, setLifeStage] = React.useState("");
@@ -139,7 +140,9 @@ const FilterPanel = () => {
           </Box>
         </div>
 
-        <div className="search-button">SEARCH</div>
+        <Link to="/search" className="search-button-wrapper">
+          <div className="search-button">SEARCH</div>
+        </Link>
         <div className="clear-filter-text" onClick={handleClear}>
           CLEAR FILTERS
         </div>

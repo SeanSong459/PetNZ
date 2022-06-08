@@ -1,0 +1,9 @@
+.searchresultcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  width: 100%;
+
+  /* height: 80vh; */
+}

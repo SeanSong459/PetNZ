@@ -1,7 +1,7 @@
 import React from "react";
 import "./SlideItem.css";
 import { Icon } from "@iconify/react";
-import "./SlideItem.css";
+// import "./SlideItem.css";
 
 const SlideItem = ({ img, name, price, oldprice }) => {
   return (
