@@ -1,11 +1,11 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import "./SlideHistory.css";
-import SlideItem from "./SlideItem";
+import "../Slide/Slide.css";
+// import SlideItem from "./SlideItem";
 import { useRef, useState } from "react";
-import Items from "./Items";
+import PetCard from "./PetCard";
 
-const SlideHistory = ({ title, subtitle, arr }) => {
+const PetSlide = ({ arr }) => {
   // const [isMoved, setIsMoved] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
 
@@ -16,26 +16,18 @@ const SlideHistory = ({ title, subtitle, arr }) => {
     let distance = listRef.current.getBoundingClientRect().x - 35;
     if (direction === "left" && slideNumber > 0) {
       setSlideNumber(slideNumber - 1);
-      listRef.current.style.transform = `translateX(${520 + distance}px)`;
+      listRef.current.style.transform = `translateX(${0 + distance}px)`;
     }
-    if (direction === "right" && slideNumber < 5) {
+    if (direction === "right" && slideNumber < 3) {
       setSlideNumber(slideNumber + 1);
-      listRef.current.style.transform = `translateX(${-520 + distance}px)`;
+      listRef.current.style.transform = `translateX(${-0 + distance}px)`;
     }
     console.log(distance);
   };
 
   return (
-    <div
-      className="Slider-history-container"
-      style={{ backgroundColor: "#f4673459" }}
-    >
-      <div className="SlideTxtContainer-history">
-        <div className="SlideTitle-history">{title}</div>
-        <div className="SlideSubtitle">{subtitle}</div>
-      </div>
-
-      <div className="SlideWrapper">
+    <>
+      <div className="PetSlideWrapper">
         <Icon
           className="SlideArrow left"
           icon="ic:sharp-expand-circle-down"
@@ -44,33 +36,21 @@ const SlideHistory = ({ title, subtitle, arr }) => {
           onClick={() => handleClick("left")}
           // style={{ display: !isMoved && "none" }}
         />
-        <div className="SlideContainer-history" ref={listRef}>
+        <div className="PetSlideContainer" ref={listRef}>
           {arr.map((item) => {
             return (
-              <SlideItem
+              <PetCard
                 key={item.id}
                 img={item.img}
                 name={item.name}
-                price={item.price}
-                oldprice={item.oldprice}
+                type={item.type}
               />
             );
           })}
-
-          {/* <SlideItem />
-          <SlideItem />
-          <SlideItem />
-          <SlideItem />
-          <SlideItem />
-          <SlideItem />
-          <SlideItem />
-          <SlideItem />
-          <SlideItem />
-          <SlideItem /> */}
         </div>
         <div className="icon-wrapper">
           <Icon
-            className="SlideArrow right"
+            className="PetSlideArrow right"
             icon="ic:sharp-expand-circle-down"
             color="#ec1c24"
             rotate={3}
@@ -78,8 +58,8 @@ const SlideHistory = ({ title, subtitle, arr }) => {
           />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default SlideHistory;
+export default PetSlide;

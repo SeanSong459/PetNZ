@@ -74,3 +74,33 @@
 .icon-wrapper:hover {
   color: #bf2121;
 }
+
+.PetSlideArrow {
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.PetSlideArrow.right {
+  right: -190px;
+}
+
+.PetSlideWrapper {
+  /* width: 100%;
+    margin-top: 10px; */
+  position: relative;
+  /* height: 100px; */
+}
+
+.PetSlideContainer {
+  display: flex;
+  margin-left: 50px;
+  width: max-content;
+  overflow: hidden;
+  transform: translateX(0px);
+  transition: all 1s ease;
+}

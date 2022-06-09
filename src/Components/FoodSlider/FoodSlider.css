@@ -174,7 +174,7 @@
   justify-content: center; */
   width: 800px;
   height: 80%;
-  background-color: aqua;
+  background-color: #f4f4f4;
 }
 .FoodSlider3 {
   width: 1760px;
@@ -183,4 +183,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* -------------------- FoodSlider3 ----------------- */
+.PetFood-moreinfo-wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 00px; */
+  width: 100%;
+  justify-content: space-between;
+  gap: 80px;
+  /* margin: auto; */
+}
+
+.petfood-search-button-wrapper {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.petfood-search-button {
+  /* display: flex;
+flex-direction: row;
+justify-content: center; */
+  /* align-items: center; */
+  margin: auto;
+  padding: 8px 36px;
+  width: 320px;
+  height: 70px;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+
+  /* White */
+
+  color: #ffffff;
+
+  /* Primary 500 */
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #ec1c24;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.petfood-search-button:hover {
+  background-color: #bf2121;
 }

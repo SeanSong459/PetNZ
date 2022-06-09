@@ -8,8 +8,10 @@ import Typography from "@mui/material/Typography";
 import "./Accordion.css";
 // import { colors } from "@mui/material";
 import SlideItem from "../Slide/SlideItem";
-import product1 from "../../Assets/images/product1.png";
-import product2 from "../../Assets/images/product2.png";
+import product1 from "../../Assets/images/toy1.jpeg";
+import product2 from "../../Assets/images/toy2.jpeg";
+import product3 from "../../Assets/images/toy3.jpeg";
+import product4 from "../../Assets/images/toy4.jpeg";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -62,7 +64,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function CustomizedAccordions() {
-  const [expanded, setExpanded] = React.useState("panel1");
+  const [expanded, setExpanded] = React.useState("");
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -85,7 +87,7 @@ export default function CustomizedAccordions() {
             </div>
             <div className="accordion-itemright">
               <div className="accordion-itemtext">2 items</div>
-              <div className="accordion-itemtext">$52.35</div>
+              <div className="accordion-itemtext">$26.98</div>
             </div>
           </div>
         </AccordionSummary>
@@ -94,21 +96,21 @@ export default function CustomizedAccordions() {
             <div className="accordion-product-wrapper">
               <SlideItem
                 img={product1}
-                name="Royal Canin Labrador Retriever Dry Dog Food"
-                price="$13.99"
+                name="Multipet Lamb Chop Dog Toy"
+                price="$12.99"
                 oldprice="$15.99"
                 className="accordion-product"
                 //   style={{ height: "50px" }}
               />
             </div>
 
-            <div className="accordion-product-price">$13.99</div>
+            <div className="accordion-product-price">$12.99</div>
           </div>
           <div className="accordion-product-container">
             <div className="accordion-product-wrapper">
               <SlideItem
                 img={product2}
-                name="Royal Canin Labrador Retriever Dry Dog Food"
+                name="Rogz Flossy Grinz Dog Toy"
                 price="$13.99"
                 oldprice="$15.99"
                 className="accordion-product"
@@ -136,17 +138,25 @@ export default function CustomizedAccordions() {
             </div>
             <div className="accordion-itemright">
               <div className="accordion-itemtext">4 items</div>
-              <div className="accordion-itemtext">$152.52</div>
+              <div className="accordion-itemtext">$98.14</div>
             </div>
           </div>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-            lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <div className="accordion-product-container">
+            <div className="accordion-product-wrapper">
+              <SlideItem
+                img={product3}
+                name="ChuckIt Medium Ultra Ball 2 Pack Dog Toy"
+                price="$28.99"
+                oldprice="$33.99"
+                className="accordion-product"
+                //   style={{ height: "50px" }}
+              />
+            </div>
+
+            <div className="accordion-product-price">$28.99</div>
+          </div>
         </AccordionDetails>
       </Accordion>
       {/* -------------------third Accordion----------------- */}
@@ -163,17 +173,25 @@ export default function CustomizedAccordions() {
             </div>
             <div className="accordion-itemright">
               <div className="accordion-itemtext">3 items</div>
-              <div className="accordion-itemtext">$98.14</div>
+              <div className="accordion-itemtext">$44.97</div>
             </div>
           </div>
         </AccordionSummary>
+
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-            lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <div className="accordion-product-container">
+            <div className="accordion-product-wrapper">
+              <SlideItem
+                img={product4}
+                name="Nylabone Dental Chew Dog Toy"
+                price="$14.99"
+                oldprice="$19.99"
+                className="accordion-product"
+              />
+            </div>
+
+            <div className="accordion-product-price">$14.99</div>
+          </div>
         </AccordionDetails>
       </Accordion>
     </div>

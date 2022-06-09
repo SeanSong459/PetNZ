@@ -18,8 +18,24 @@ const FilterPanel = ({ setProducts }) => {
       const filteredProducts = res.data.filter((product) => {
         if (LifeStage && Brand) {
           return product.brand === Brand && product.lifestage === LifeStage;
+        } else if (LifeStage && Breed) {
+          return product.breed === Breed && product.lifestage === LifeStage;
+        } else if (Breed && LifeStage) {
+          return product.breed === Breed && product.lifestage === LifeStage;
+        } else if (LifeStage && Breed && Brand) {
+          return (
+            product.brand === Brand &&
+            product.breed === Breed &&
+            product.lifestage === LifeStage
+          );
+        } else if (Foodtype) {
+          return product.foodtype === Foodtype;
         } else {
-          return product.brand === Brand || product.lifestage === LifeStage;
+          return (
+            product.brand === Brand ||
+            product.lifestage === LifeStage ||
+            product.breed === Breed
+          );
         }
       });
 

@@ -5,20 +5,13 @@ import Navbar from "../Components/Navbar/Navbar";
 import Grid from "@mui/material/Grid";
 import CustomizedAccordions from "../Components/DashBoard/Accordion";
 import Footer from "../Components/Footer/Footer";
-// import PetSlide from "../Components/DashBoard/PetSlide";
-import MypetSection from "../Components/DashBoard/MypetSection";
-import SlideHistory from "../Components/Slide/SlideHistory";
-import Items from "../Components/Slide/Items";
-import { motion } from "framer-motion";
+import "../Components/DashBoard/OrderHistory.css";
 
-const Dashboard = () => {
+const OrderHistory = () => {
   return (
     <>
       <Navbar />
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 0.5 } }}
-        exit={{ opacity: 0, transition: { duration: 0.5 } }}
+      <div
         className="dashboardwrapper"
         style={{ width: "85%", margin: "auto" }}
       >
@@ -27,17 +20,16 @@ const Dashboard = () => {
             <SideMenu />
           </Grid>
           <Grid item lg={8.5}>
-            <DashBoard />
+            <div className="order-history-wrapper">Order history</div>
+
             <CustomizedAccordions />
-            <MypetSection />
           </Grid>
         </Grid>
-      </motion.div>
-      <SlideHistory title="Current Specials" arr={Items} />
+      </div>
 
       <Footer />
     </>
   );
 };
 
-export default Dashboard;
+export default OrderHistory;

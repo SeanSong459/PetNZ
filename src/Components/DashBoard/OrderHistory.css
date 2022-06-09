@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "CRC";
+  src: url("../../Assets/fonts/Circe/Circe-ExtraBold.otf");
+}
+
+.order-history-wrapper {
+  font-family: "CRC";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 81px;
+  /* identical to box height */
+
+  display: flex;
+  /* align-items: center; */
+  text-align: left;
+
+  color: #000000;
+}

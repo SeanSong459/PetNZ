@@ -19,8 +19,13 @@
 
 .ItemImg {
   flex: 0.5;
-  width: 160px;
+  max-width: 160px;
+
   /* height: 50px; */
+}
+
+.ItemImg Img {
+  max-width: 250px;
 }
 /* ---------------------ItemInfoWrapper  ---------------------*/
 .ItemInfoWrapper {

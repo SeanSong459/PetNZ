@@ -5,7 +5,7 @@ import SlideItem from "./SlideItem";
 import { useRef, useState } from "react";
 import Items from "./Items";
 
-const Slide = ({ title, subtitle }) => {
+const Slide = ({ title, subtitle, arr }) => {
   // const [isMoved, setIsMoved] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
 
@@ -42,7 +42,7 @@ const Slide = ({ title, subtitle }) => {
           // style={{ display: !isMoved && "none" }}
         />
         <div className="SlideContainer" ref={listRef}>
-          {Items.map((item) => {
+          {arr.map((item) => {
             return (
               <SlideItem
                 key={item.id}
