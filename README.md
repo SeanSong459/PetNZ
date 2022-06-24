@@ -15,4 +15,8 @@ __Highlight__
 - Quicksort
 - Filtered search
 
+![screenshot-www figma com-2022 06 24-21_07_57](https://user-images.githubusercontent.com/98294710/175503353-1ee5f300-488c-4827-9193-02c6ca812702.png)
+
 https://user-images.githubusercontent.com/98294710/175466498-5d2bde91-1eed-4e54-b06b-bd78ef8c2846.mp4
+
+
